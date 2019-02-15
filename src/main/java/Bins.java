@@ -1,13 +1,8 @@
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
 public class Bins {
 
-    private Integer minBin;
-    private Integer maxBin;
-    private Bins[] allBins;
-    private Integer count = 0;
     private Map<Integer, Integer> binMap = new HashMap<Integer, Integer>();
 
     public Bins(){

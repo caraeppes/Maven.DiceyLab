@@ -2,7 +2,7 @@ import java.util.Random;
 
 public class Dice {
 
-    Integer numberOfDice;
+    private Integer numberOfDice;
 
     public Dice(Integer numberOfDice){
         this.numberOfDice = numberOfDice;
@@ -18,7 +18,7 @@ public class Dice {
 
     public Integer rollDie(){
         Random random = new Random();
-        return random.nextInt(5) + 2;
+        return random.nextInt(6) + 1;
     }
 
     public Integer tossAndSum(){
@@ -27,23 +27,5 @@ public class Dice {
             sum += rollDie();
         }
         return sum;
-    }
-
-    public static void main(String[] args) {
-        Dice dice = new Dice(5);
-        System.out.println(dice.rollDie());
-        System.out.println(dice.rollDie());
-        System.out.println(dice.rollDie());
-        System.out.println(dice.rollDie());
-        System.out.println(dice.rollDie());
-        System.out.println(dice.rollDie());
-        System.out.println(dice.rollDie());
-        System.out.println(dice.rollDie());
-        System.out.println(dice.rollDie());
-        System.out.println(dice.rollDie());
-
-        System.out.println(dice.tossAndSum());
-        System.out.println(dice.tossAndSum());
-        System.out.println(dice.tossAndSum());
     }
 }
